@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js/style.css">
+    <title>Document</title>
+  <script src="js/login.js"></script>
+</head>
+<body>
+  <h1>REGISTER</h1>
+  <div id="error"></div>
+  <p>username</p>
+  <input type="text" id="username"><br>
+  <p>password</p>
+  <input type="password" id="password"><br>
+  <p>confirm password</p>
+  <input type="password" id="confirm_password"></br>
+
+  <button type="button"onclick="login()">LOG IN</button>
+
+</body>
+</html>
+
+function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const confirm_password = document.getElementById("confirm_password").value
+    const error = document.getElementById("error")
+
+    if (username === "" || password === "" || confirm_password === "") {
+        error.innerHTML="username and password and confirm_password its  inable";
+    }
+    else if (password === confirm_password) {
+        error.innerHTML="yuo log in";
+    }
+    else {
+        error.innerHTML="youre faild in action";
+    }
+}  
