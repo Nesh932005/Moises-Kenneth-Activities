@@ -1,4 +1,0 @@
-- Add `let afterEquals = false;` variable at the top.
-- Modify `appendNumber` function to handle starting new number after equals.
-- Modify operator click event to perform immediate calculations for chaining.
-- Update equals click to set `afterEquals = true;`.
