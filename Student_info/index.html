@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Attendance And  Grade Record</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Info</h2>
+
+  <!-- SEARCH BAR + BUTTON -->
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search student name...">
+    <button onclick="searchStudent()">Search</button>
+  </div>
+
+  <!-- FILTER BUTTONS -->
+  <div class="buttons">
+    <button onclick="showAll()">All</button>
+    <button onclick="filterAttendance(true)">Present</button>
+    <button onclick="filterAttendance(false)">Absent</button>
+    <button onclick="filterResult('Passed')">Passed</button>
+    <button onclick="filterResult('Failed')">Failed</button>
+  </div>
+
+  <!-- TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Sub 1</th>
+        <th>Sub 2</th>
+        <th>Sub 3</th>
+        <th>Average</th>
+        <th>Remarks</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+</div>
+
+<script src="./js/cul.js"></script>
+</body>
+</html>
